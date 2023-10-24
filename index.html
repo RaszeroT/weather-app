@@ -3,29 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
     <title>5 Day Weather Forecast</title>
 </head>
 <!-- main -->
 <body>
+
     <header id="tile">
         <h1>5 Day Weather Forecast</h1>
     </header>
-    <!-- empty hero div for background -->
-    <div id="hero"></div>
 
     <!-- section for search input and button -->
     <section id="search" class="container">
         <label for="search-input">Search for a City:</label><br>
-        <input type="text"><br>
+        <input type="text" id="search-input"><br>
         <button id="search-btn">Search</button>
     </section>
 
     <!-- container for local storage retrieval -->
-    <section id="storage-container"></section>
+    <section id="storage-container">
+        <label for="search-history">Search History:</label>
+        <div class="search-history" id="search-history"></div>
+        <button id="clear-history">Clear</button>
+    </section>
 
+    <!-- container for current weather api results -->
+    <section id="current-forecast-container">
+        <div class="present-weather-container">
+            <h2 id="city">Missouri</h2>
+            <img src="" alt="weather icon" class="weather-icon">
+            <p id="temp">Temp:</p>
+            <p id="wind">Wind:</p>
+            <p id="humidity">Humidity</p>
+        </div>
+    </section>
 
-    <!-- container for weather api results -->
-    <section id="forecast-result"></section>
+    <section id="future-forecast-container" class="row card">
+        <!-- day one -->
+        <article class="card-column">
+            <h3 id="day1">Day of week:</h3>
+            <p id="date1">date:</p>
+            <img src="" alt="weather icon" class="weather-icon1">
+            <p id="temp1">temp:</p>
+            <p id="wind1">wind:</p>
+            <p id="humidity1">humidity:</p>
+        </article>
 
+        <!-- day two -->
+        <article class="card-column">
+            <h3 id="day2">Day of week:</h3>
+            <p id="date2">date:</p>
+            <img src="" alt="weather icon" class="weather-icon2">
+            <p id="temp2">temp:</p>
+            <p id="wind2">wind:</p>
+            <p id="humidity2">humidity:</p>
+        </article>
+
+        <!-- day three -->
+        <article class="card-column">
+            <h3 id="day3">Day of week:</h3>
+            <p id="date3">date:</p>
+            <img src="" alt="weather icon" class="weather-icon3">
+            <p id="temp3">temp:</p>
+            <p id="wind3">wind:</p>
+            <p id="humidity3">humidity:</p>
+        </article>
+
+        <!-- day four -->
+        <article class="card-column">
+            <h3 id="day4">Day of week:</h3>
+            <p id="date4">date:</p>
+            <img src="" alt="weather icon" class="weather-icon4">
+            <p id="temp4">temp:</p>
+            <p id="wind4">wind:</p>
+            <p id="humidity4">humidity:</p>
+        </article>
+
+        <!-- day five -->
+        <article class="card-column">
+            <h3 id="day5">Day of week:</h3>
+            <p id="date5">date:</p>
+            <img src="" alt="weather icon" class="weather-icon5">
+            <p id="temp5">temp:</p>
+            <p id="wind5">wind:</p>
+            <p id="humidity5">humidity:</p>
+        </article>
+    </section>
+
+    <footer>
+
+    </footer>
+
+    <script src="./assets/JS/script.js"></script>
 </body>
 </html>
